@@ -3,13 +3,11 @@ class Artist
   attr_accessor :name, :songs
 
   @@artists=[]
-  def initialize(name)
 
+  def initialize(name)
     @name=name
     @songs=[]
-    @artists=[]
     @@artists<<self
-      # binding.pry
   end
 
   def songs
