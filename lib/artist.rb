@@ -17,7 +17,6 @@ class Artist
   end
 
   def self.all
-
     @@artists
     binding.pry
   end
