@@ -6,6 +6,8 @@ class Appointment
     @date=date
     @patient=patient
     @doctor=doctor
+    doctor.appointments<<self
+    patient.appointments<<self
     @@all<<self
   end
 
