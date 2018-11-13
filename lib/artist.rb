@@ -2,7 +2,7 @@ class Artist
   attr_accessor :name, :genre
 
   @@all=[]
-  def initialize(name, genre)
+  def initialize(name)
     @name=name
     @genre=genre
     @@all<<self
