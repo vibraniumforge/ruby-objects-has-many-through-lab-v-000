@@ -17,6 +17,10 @@ class Genre
     @songs
   end
 
+  def new_song
+    song=Song.new(name, aritst, self)
+    @songs<<song
+  end
   def add_song(song)
     @songs<<song
     song.genre=self
@@ -26,7 +30,5 @@ class Genre
     self.song.collect {|song| song.artist}
   end
 
-  def method_name
 
-  end
 end
