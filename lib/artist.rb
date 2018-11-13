@@ -16,8 +16,9 @@ class Artist
   end
 
   def self.all
+
+    @@artists
     binding.pry
-    @artists
   end
 
   def add_song(song)
