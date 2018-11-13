@@ -7,4 +7,8 @@ class Doctor
     @doctors=[]
   end
 
+  def self.all
+    @doctors
+  end
+
 end
