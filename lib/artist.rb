@@ -26,6 +26,12 @@ class Artist
     song.artist=self
   end
 
+  def new_song
+    song=Song.new
+    song.name=@name
+    
+  end
+
   def genres
     self.songs.collect do |song|
       song.genre
