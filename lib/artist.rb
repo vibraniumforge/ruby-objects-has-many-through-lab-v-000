@@ -10,12 +10,8 @@ class Artist
     @@all<<self
   end
 
-  def sel.all
-    @@@all
-  end
-
   def self.all
-    @@artists
+    @@all
   end
 
   def add_song(song)
