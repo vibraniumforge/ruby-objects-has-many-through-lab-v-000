@@ -4,6 +4,7 @@ class Artist
 
   @@artists=[]
   def initialize(name)
+    binding.pry
     @name=name
     @songs=[]
     @artists=[]
