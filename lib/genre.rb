@@ -23,9 +23,7 @@ class Genre
   end
 
   def artists
-    self.song.collect do |song|
-      song.artist
-    end
+    self.song.collect {|song| song.artist}
   end
 
   def method_name
