@@ -2,16 +2,16 @@ require "pry"
 class Artist
   attr_accessor :name, :songs
 
-  @@artists=[]
+  @@all=[]
 
   def initialize(name)
     @name=name
     @songs=[]
-    @@artists<<self
+    @@all<<self
   end
 
-  def songs
-    @songs
+  def sel.all
+    @@@all
   end
 
   def self.all
