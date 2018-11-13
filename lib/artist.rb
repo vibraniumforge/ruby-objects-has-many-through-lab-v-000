@@ -18,14 +18,20 @@ class Artist
     self.songs.collect {|song| song.genre}
   end
 
-  def add_song(song)
-    @songs<<song
-    song.artist=self
-  end
-
   def new_song(song_name, genre)
     song=Song.new(song_name, self, genre)
   end
+
+  def self.songs
+    Song.all.select {|song| song.artist==self}
+  end
+  #
+  # def add_song(song)
+  #   @songs<<song
+  #   song.artist=self
+  # end
+
+
 
 
 
