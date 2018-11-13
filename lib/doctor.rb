@@ -10,7 +10,7 @@ class Doctor
   end
 
   def self.all
-    @doctors
+    @@all
   end
 
 end
