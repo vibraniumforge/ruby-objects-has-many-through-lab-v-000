@@ -1,7 +1,11 @@
 class Appointment
   @@all=[nil]
+  attr_accessor :date, :patient, :doctor
 
-  def initialize
+  def initialize(patient,doctor, date)
+    @date=date
+    @patient=patient
+    @doctor=doctor
     @@all<<self
   end
 
