@@ -9,7 +9,6 @@ class Artist
     @songs=[]
     @artists=[]
     @@artists<<name
-    # binding.pry
   end
 
   def songs
