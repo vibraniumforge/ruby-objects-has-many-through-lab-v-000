@@ -4,11 +4,12 @@ class Artist
 
   @@artists=[]
   def initialize(name)
-    binding.pry
+  
     @name=name
     @songs=[]
     @artists=[]
     @@artists<<name
+      # binding.pry
   end
 
   def songs
