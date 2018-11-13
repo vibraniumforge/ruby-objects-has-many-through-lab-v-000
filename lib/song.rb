@@ -10,4 +10,8 @@ class Song
     @songs=[]
   end
 
+  def all
+    @songs
+  end
+
   end
