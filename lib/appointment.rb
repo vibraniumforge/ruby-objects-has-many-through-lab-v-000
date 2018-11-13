@@ -11,7 +11,7 @@ class Appointment
     doctor.appointments<<self
     patient.appointments<<self
     @@all<<self
-    binding.pry
+    # binding.pry
   end
 
   def self.all
