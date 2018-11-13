@@ -3,8 +3,21 @@ class Genre
 
   def initialize(name)
     @name=name
-    @genre=genre
-    genre.add_song(self)
+    @songs=[]
+  end
+
+  def songs
+    @songs
+  end
+
+  def add_song
+    @songs<<song
+  end
+
+  def artists
+    self.song.collect do |song|
+      song.artist
+    end
   end
 
   def method_name
