@@ -16,7 +16,6 @@ class Artist
 
   def self.all
     @@artists
-    # binding.pry
   end
 
   def add_song(song)
