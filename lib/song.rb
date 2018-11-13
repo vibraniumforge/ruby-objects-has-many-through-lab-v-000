@@ -8,6 +8,7 @@ class Song
     self.genre=genre
     genre.add_song(self)
     @songs=[]
+    @songs<<name
   end
 
   def all
