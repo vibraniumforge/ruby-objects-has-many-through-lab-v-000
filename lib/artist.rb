@@ -2,11 +2,12 @@ require "pry"
 class Artist
   attr_accessor :name
 
+  @@artists=[]
   def initialize(name)
     @name=name
     @songs=[]
     @artists=[]
-    @artists<<name
+    @@artists<<name
     # binding.pry
   end
 
