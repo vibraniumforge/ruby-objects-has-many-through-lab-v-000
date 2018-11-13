@@ -11,7 +11,7 @@ class Song
     @songs<<name
   end
 
-  def all
+  def self.all
     @songs
   end
 
