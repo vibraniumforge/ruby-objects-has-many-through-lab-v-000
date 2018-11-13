@@ -1,5 +1,5 @@
 class Appointment
-  @@all=[]
+  @@all=[nil]
 
   def initialize
     @@all<<self
